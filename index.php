@@ -42,7 +42,7 @@ echo $data;
 
 
 /*
-http://127.0.0.1/api.php
+http://127.0.0.1/index.php
 
 music=netease&api=netease&search=[歌曲名]	//搜索歌曲 返回搜索结果
 music=netease&api=url&url=[ID]				//取回下载地址	搜索返回的 url_id
