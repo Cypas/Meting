@@ -4,24 +4,24 @@
 
 ### 接口说明
 
-接口地址:
-你自己域名/index.php
+接口地址:<br/>
+你自己域名/index.php<br/>
 
-返回格式:
-json
+返回格式:<br/>
+json<br/>
 
-请求方式:
-GET
+请求方式:<br/>
+GET<br/>
 
-请求示例:
-你自己域名/index.php?api=search&music=netease&search=%E6%99%9A%E5%AE%89%E5%96%B5
+请求示例:<br/>
+你自己域名/index.php?api=search&music=netease&search=%E6%99%9A%E5%AE%89%E5%96%B5<br/>
 
 参数说明
 
 |<font color=DeepSkyBlue>参数<font>|<font color=DeepSkyBlue>必填<font>|<font color=DeepSkyBlue>默认值<font>|<font color=DeepSkyBlue>可选值<font>|<font color=DeepSkyBlue>说明<font>|
 |--|--|--|--|--|
 |api|是|null|'search', 'url', 'lyric', 'pic'|接口功能，search搜索歌曲来获取歌曲的url_id,pic_id,lyric_id(index.php内代码的limit可以控制返回结果数量，默认为1)，后面三个url(直链地址)，lyric(歌词)，pic(封面)则需要search获取的对应id进行二次查询|
-|music|是|netease|'netease', 'tencent', 'xiami', 'kugou', 'baidu'|搜索引擎|
+|music|是|netease|'netease', 'tencent', 'kugou', 'baidu'|搜索引擎|
 |id|api为url，lyric，pic时需要该参数|null||id，通过search接口获得，用于api为url，lyric，pic时的二次查询|
 |search|api为search时需要该参数|null||需要搜索的歌名，提交时需要进行url编码|
 
@@ -70,4 +70,3 @@ api为pic时返回:
     "url":"https:\/\/p3.music.126.net\/aQhLC9kR4Z7iiwIuynXnQA==\/14402502812253006.jpg?param=300y300"
 }
 ```
-
